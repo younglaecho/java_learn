@@ -33,7 +33,7 @@ class MemberServiceTest {
     void 회원가입() {
         // given
         Member member = new Member();
-        member.setName("호옹이");
+        member.setName("호옹이3");
 
         // when
         Long saveId = memberService.join(member);
@@ -47,10 +47,10 @@ class MemberServiceTest {
     public void 중복회원예외() {
         // given
         Member member1 = new Member();
-        member1.setName("호옹이");
+        member1.setName("호옹이4");
 
         Member member2 = new Member();
-        member2.setName("호옹이");
+        member2.setName("호옹이4");
 
         // when
         memberService.join(member1);
